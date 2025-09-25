@@ -1,6 +1,6 @@
 # Praktikum PBW – Laravel 12
 
-**Pertemuan 1: Setup, Routing, & View Blade**
+**Pertemuan 2: Setup, Routing, & View Blade**
 
 Halo teman-teman 👋  
 Selamat datang di praktikum Pemrograman Berbasis Web menggunakan **Laravel 12**.
@@ -48,7 +48,7 @@ Route::get('/profile', function () {
         'nim' => '12.34.5678',
         'kelas' => 'TI-4B',
         'hobi' => ['Ngoding', 'Desain', 'Gaming'],
-        'bio'  => 'Mahasiswa semester 4 yang suka Laravel & UI sederhana.',
+        'bio'  => 'Mahasiswa semester 5 yang suka Laravel & UI sederhana.',
         'theme'=> $theme,
     ];
     return view('profile', $data);
@@ -67,17 +67,17 @@ Route::get('/profile', function () {
             :root {
                 --bg: {
                      {
-                        $theme=== 'dark' ? '#0f172a' : "#ffffff";
+                        $theme==='dark' ? '#0f172a' : "#ffffff";
                     }
                 }
                 --fg: {
                      {
-                        $theme=== 'dark' ? '#e2e8f0' : "#0f172a";
+                        $theme==='dark' ? '#e2e8f0' : "#0f172a";
                     }
                 }
                 --muted: {
                      {
-                        $theme=== 'dark' ? '#94a3b8' : "#475569";
+                        $theme==='dark' ? '#94a3b8' : "#475569";
                     }
                 }
             }
